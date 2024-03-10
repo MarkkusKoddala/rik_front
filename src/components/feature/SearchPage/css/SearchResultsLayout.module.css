@@ -1,0 +1,47 @@
+/* SearchResultsLayout.module.css */
+.resultsContainer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.resultsList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 700px; /* Adjust this value based on your layout needs */
+}
+
+.resultItem {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.resultItem:hover {
+    background-color: #f0f0f0;
+}
+
+.resultContent h3 {
+    margin-top: 0;
+    color: #333;
+    font-size: 18px;
+}
+
+.resultCode {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+h3{
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+

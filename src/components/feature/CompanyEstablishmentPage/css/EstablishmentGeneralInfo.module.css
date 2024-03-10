@@ -1,0 +1,31 @@
+.inputGroup {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.label {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    min-width: 180px;
+}
+
+.input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+    flex-grow: 1;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.inputGroup:nth-child(6), h2 {
+    border-bottom: 1px solid #eae9e9;
+    padding-bottom: 20px;
+}
