@@ -77,7 +77,7 @@ const CompanyEstablishmentPage = () => {
             <EstablishmentShareholdersData
                 handleShareholdersData={handleShareholdersData}
             />
-            <button onClick={saveClicked}> Salvesta </button>
+            <button onClick={saveClicked} className={styles.saveButton}> Salvesta </button>
         </div>
     );
 };

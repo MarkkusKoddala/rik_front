@@ -8,3 +8,8 @@
     max-width: 800px;
     margin: auto;
 }
+
+.saveButton{
+    max-width: 150px;
+    align-self: center;
+}

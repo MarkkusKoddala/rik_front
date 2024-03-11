@@ -1,25 +1,23 @@
 table {
-  width: 100%; /* Table width to fill the container */
-  border-collapse: collapse; /* Collapses border to avoid double lines */
+  width: 100%;
+  border-collapse: collapse;
 }
 
 th, td {
-  text-align: left; /* Aligns text to the left */
-  padding: 12px 15px; /* Padding inside table cells */
-  border-bottom: 1px solid #f0f0f0; /* Light border for each row */
+  text-align: left;
+  padding: 12px 15px;
+  border-bottom: 1px solid #f0f0f0;
   width: auto;
-
 }
 
 th {
-  background-color: #f9f9f9; /* Light background color for the header */
-  color: #333; /* Dark color for header text */
-  font-weight: 600; /* Makes header text bold */
-
+  background-color: #f9f9f9;
+  color: #333;
+  font-weight: 600;
 }
 
 td {
-  color: #666; /* Light color for cell text */
+  color: #666;
 }
 
 button {
@@ -30,9 +28,75 @@ button {
   border-radius: 4px;
   cursor: pointer;
   font-weight: 600;
-  transition: background-color 0.3s ease; /* Smooth transition for button interaction */
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
   background-color: #0056b3;
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+input:hover {
+  background-color: #f1f1f1;
+}
+
+input[type="text"] {
+  background-color: white;
+  color: #333;
+}
+
+input::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: white;
+  cursor: pointer;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+select {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="%234CAF50" d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 12px top 50%;
+  background-size: 12px;
+}
+
+select:hover {
+  background-color: #f1f1f1;
+}
+
+select::placeholder {
+  color: #aaa;
+  font-style: italic;
 }

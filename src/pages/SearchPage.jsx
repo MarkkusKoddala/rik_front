@@ -11,13 +11,11 @@ const initialFormState = {
 };
 
 const SearchPage = () => {
-    const [formData, setFormData] = useState(initialFormState);
     const [results, setResults] = useState([]);
 
     useEffect(() => {
         const fetchData = async () => {
             try {
-                // Adjusted to fetch data using initial form state on component mount
                 const response = await ApiService.getCompanies(initialFormState);
                 setResults(response);
             } catch (error) {
@@ -26,9 +24,9 @@ const SearchPage = () => {
         };
 
         fetchData();
-    }, []); // Empty dependency array means this effect runs only once on mount
+    }, []);
 
-    const handleSearch = async () => {
+    const handleSearch = async (formData) => {
         console.log('Searching with params:', formData);
         try {
             const response = await ApiService.getCompanies(formData);
@@ -40,7 +38,7 @@ const SearchPage = () => {
 
     return (
         <div>
-            <SearchForm setFormData={setFormData} onSearch={handleSearch} />
+            <SearchForm onSearch={handleSearch} />
             <SearchResultsLayout results={results} />
         </div>
     );

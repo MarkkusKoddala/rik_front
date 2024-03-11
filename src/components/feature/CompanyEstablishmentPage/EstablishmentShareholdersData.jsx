@@ -91,7 +91,7 @@ const EstablishmentShareholdersData = ({ handleShareholdersData }) => {
                     </tr>
                 ))}
                 {showLastRow && (
-                    <tr className={styles.lastrow}>
+                    <tr>
                         <td>
                             <select name="identification_code" onChange={handleNewShareholderChange} value={newShareholder.identification_code || ''}>
                                 <option value="">Vali isik</option>
@@ -100,7 +100,7 @@ const EstablishmentShareholdersData = ({ handleShareholdersData }) => {
                                 ))}
                             </select>
                         </td>
-                        <td>
+                        <td className={styles.lastColumn}>
                             <input type="number" name="shareSize" onChange={handleNewShareholderChange} value={newShareholder.shareSize || ''} />
                             <button className={styles.addButton} onClick={handleAddRowClicked}>Lisa</button>
                         </td>
