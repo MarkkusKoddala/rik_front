@@ -13,6 +13,7 @@ const CompanyShareholderManagePage = () => {
     const [shareholders, setShareholders] = useState(state.shareholdersData)
     const {showError} = useError();
 
+
     const saveTableClicked = () => {
         let share_size_total = 0;
         const updatableShareholders = shareholders.filter(sh => {

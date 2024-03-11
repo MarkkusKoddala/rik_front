@@ -1,18 +1,20 @@
-/* CompanyShareholdersData.module.css */
 .block {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    max-width: 800px;
-    margin: 20px;
+    background-color: white; /* Pure white background */
+    border-radius: 8px; /* Rounded corners for the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px; /* Padding around the table */
+    margin: 20px; /* Center the block with margin */
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
+    width: 100%; /* Table width to fill the container */
+    border-collapse: collapse; /* Collapses border to avoid double lines */
 }
 
 .block h2{
-    padding: 0 15px;
+    padding: 0px 15px;
+}
+
+.saveButtonDiv {
+    margin: 20px;
 }
